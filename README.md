@@ -3,7 +3,8 @@
 Homebrew packages for [gnugomez](https://github.com/gnugomez)'s projects.
 
 ```sh
-brew install --no-quarantine gnugomez/tap/majordomo
+brew tap gnugomez/tap && brew trust gnugomez/tap
+brew install --no-quarantine majordomo
 ```
 
 `--no-quarantine` because Majordomo is not notarized; without it, macOS asks
