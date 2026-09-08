@@ -20,7 +20,9 @@ cask "majordomo" do
   ]
 
   caveats <<~EOS
-    Majordomo is not notarized: install with --no-quarantine, or allow it
-    under System Settings → Privacy & Security after the first launch.
+    Majordomo is not notarized. To pass Gatekeeper, either allow it under
+    System Settings → Privacy & Security after the first launch attempt,
+    or clear the quarantine flag:
+      xattr -dr com.apple.quarantine /Applications/Majordomo.app
   EOS
 end
