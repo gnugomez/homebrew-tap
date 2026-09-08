@@ -9,7 +9,7 @@ cask "majordomo" do
   desc "Menu-bar inbox for GitHub and GitLab notifications"
   homepage "https://github.com/gnugomez/majordomo"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
   depends_on arch: :arm64
 
   app "Majordomo.app"
