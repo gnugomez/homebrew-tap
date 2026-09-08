@@ -2,7 +2,7 @@
 # every release — don't edit version/sha256 by hand.
 cask "majordomo" do
   version "1.0.0"
-  sha256 :no_check # replaced with the DMG checksum by the first release
+  sha256 "3768b2d07a88bea8bccc3f84e24e1e2f6a130fc76f7c3e5633112fd81cd8a043"
 
   url "https://github.com/gnugomez/majordomo/releases/download/v#{version}/Majordomo-macos-arm64.dmg"
   name "Majordomo"
